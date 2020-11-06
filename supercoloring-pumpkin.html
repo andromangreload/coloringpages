@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Supercoloring Pumpkin
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Supercoloring Pumpkin",
+  "datePublished": "2020-11-06",
+  "image": [&quot;https://i.pinimg.com/originals/ef/47/24/ef47241ac568d3d175f2b4f15d089ab8.png&quot;,&quot;https://i.pinimg.com/originals/35/be/00/35be001db5e390c58a61826cf22e0624.jpg&quot;,&quot;https://i.pinimg.com/originals/3e/0e/2f/3e0e2f98db6880014bfa9f767f501a30.png&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Coloring Pages",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=supercoloring pumpkin",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Supercoloring Pumpkin
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Supercoloring Pumpkin</strong>. Super coloring free printable coloring pages for kids coloring sheets free colouring book illustrations printable pictures clipart black and white pictures line art and drawings. A pumpkin patch is a field where the pumpkins grow.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/1a/46/d6/1a46d6e29b4ce175db2d593402352c0d.jpg" alt="Pumpkins Coloring Pages Super Coloring Pumpkin Coloring Sheet Pumpkin Printable Thanksgiving Coloring Pages" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSUIhhJMdUeUVbyjnCeGcmL8QEtqyDTvq51w';">
+        <figcaption>Pumpkins Coloring Pages Super Coloring Pumpkin Coloring Sheet Pumpkin Printable Thanksgiving Coloring Pages from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Super coloring free printable coloring pages for kids coloring sheets free colouring book illustrations printable pictures clipart black and white pictures line art and drawings. Halloween pumpkin with witch hat. A fun fact farmers often compete during the season to see who grows the largest pumpkin possible.
+    </p>
+    <h3>For boys and girls kids and adults teenagers and toddlers preschoolers and older kids at school.</h3>
+    <p>It will be a totally new experience for him. Super coloring free printable coloring pages for kids coloring sheets free colouring book illustrations printable pictures clipart black and white pictures line art and drawings. It will be a totally new experience for him. Super coloring free printable coloring pages for kids coloring sheets free colouring book illustrations printable pictures clipart black and white pictures line art and drawings.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Halloween Coloring Pages Halloween Pumpkin With Smiling Face Coloring Page Super Coloring Halloween Coloring Pages Coloring Pages Halloween Coloring" src="https://i.pinimg.com/originals/54/9d/f5/549df5cc3aadf0f78eb7d32e0946f03c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSv6mDt1mUXrgqgxX76yn6H0raJocOGZomx9w';" />
+        <small>Source: www.pinterest.com</small>
+        <p>For boys and girls kids and adults teenagers and toddlers preschoolers and older kids at school.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pumpkins Coloring Pages Super Coloring Pumpkin Coloring Sheet Pumpkin Printable Thanksgiving Coloring Pages" src="https://i.pinimg.com/originals/1a/46/d6/1a46d6e29b4ce175db2d593402352c0d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSUIhhJMdUeUVbyjnCeGcmL8QEtqyDTvq51w';" />
+        <small>Source: www.pinterest.com</small>
+        <p>For boys and girls kids and adults teenagers and toddlers preschoolers and older kids at school.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Three Pumpkins Coloring Page Supercoloring Com Pumpkin Coloring Pages Coloring Pages Pumpkin Drawing" src="https://i.pinimg.com/originals/57/55/26/57552676b030108da1cbb30d6ac646d8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROseCh8YQ558YE5X8fHXOH_gruOGMVU5snlw';" />
+        <small>Source: in.pinterest.com</small>
+        <p>Let s proceed to free pumpkin coloring sheets to print.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pumpkin Coloring Page Free Printable Coloring Pages Pumpkin Coloring Pages Coloring Pages Free Printable Coloring" src="https://i.pinimg.com/originals/8f/a8/40/8fa8400ce107171caaa142daff3c8c8d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxCDEzy_mmbn7AEuqIbhkyU4C8QlOlhBqiPA';" />
+        <small>Source: in.pinterest.com</small>
+        <p>To date the largest pumpkin weighs a whopping 1 190 5 kg.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pumpkin Coloring Page Free Printable Coloring Pages Fall Coloring Pages Pumpkin Coloring Pages Pumpkin Printable" src="https://i.pinimg.com/originals/ca/dd/12/cadd128410dc9906b2df2efd6eafa6da.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7ItNTgZO6o6MPRKlwhWdbtyK1NTspMtThUQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>These printable pumpkin coloring pages have pumpkins in pairs groups or all alone.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cute Pumpkin And Little Ghost Super Coloring Coloring Pages Halloween Coloring Pages Halloween Coloring Book" src="https://i.pinimg.com/originals/12/7b/38/127b388bea459ee04e02254698de285c.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFsRXl3Mco-lDmq301i1ItFrafRm2TLIji5Q';" />
+        <small>Source: www.pinterest.com</small>
+        <p>For boys and girls kids and adults teenagers and toddlers preschoolers and older kids at school.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pumpkin With Leaves Coloring Page Free Printable Coloring Pages Pumpkin Coloring Pages Fall Coloring Pages Leaf Coloring Page" src="https://i.pinimg.com/originals/c5/7e/e3/c57ee338f94590f21a5059e61938b775.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSEBi8ihUnDAleOiGn2onIrr7BF4CFKyX1DFA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Super coloring free printable coloring pages for kids coloring sheets free colouring book illustrations printable pictures clipart black and white pictures line art and drawings.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Smiling Pumpkin Super Coloring Halloween Pictures Coloring Pages Color" src="https://i.pinimg.com/originals/3e/0e/2f/3e0e2f98db6880014bfa9f767f501a30.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQrwfbVQQvxgcu2QwAJaES4Q36vwiW80sJpkA';" />
+        <small>Source: in.pinterest.com</small>
+        <p>For boys and girls kids and adults teenagers and toddlers preschoolers and older kids at school.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Jesen" src="https://i.pinimg.com/originals/6f/a6/7f/6fa67f63ccb920a921effc527e1c5d5e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRkOJHA1mQs7Yndeff6WFJ10e5g3ENEYAIAag';" />
+        <small>Source: www.pinterest.com</small>
+        <p>A pumpkin patch is a field where the pumpkins grow.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/brain-coloring-page.html"><i>&larr; brain coloring page</i></a>
+                                                                    
+                                        <a href="/bonfire-night-colouring-sheets.html"><i>bonfire night colouring sheets &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://www.bestrevenuenetwork.com/wcaws98grh?key=9c2eb96f97ce01466efad87e60b1b6cc';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
